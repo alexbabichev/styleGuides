@@ -7,11 +7,12 @@
 1. [Sass](sass/README.md)
 2. [JavaScript](js/README.md)
 3. [TypeScript](ts/README.md)
-4. [Angular2+](a2/README.md)
+4. [Angular2+](angular2/README.md)
 5. [Requirements for designers](requirements/README.md)
 
-##Resources
 
+
+##Resources
 
 
 ## License
