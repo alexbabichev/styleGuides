@@ -1,12 +1,12 @@
-# Styleguide
+# Frontend Styleguide
 
 ## Table of Contents
 
-1. [Sass](#terminology)
+1. [Sass](#sass/README.md)
 2. [JavaScript](#terminology)
 3. [TypeScript](#terminology)
 4. [Angular2](#terminology)
-5. [Requirements](#terminology)
+5. [Requirements for designers](#terminology)
 
 
 ## License
