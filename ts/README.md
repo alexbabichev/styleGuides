@@ -145,3 +145,7 @@ Annotate arrays as `foos:Foo[]` instead of `foos:Array<Foo>`.
 Name files with camelCase. E.g. `accordian.tsx`, `myControl.tsx`, `utils.ts`, `map.ts` etc.
 
 > Reasons: Its easier to read. Its used by the TypeScript team. Makes easier to know something is an array as the mind is trained to detect [].
+
+## Resources
+
+[TypeScript Deep Dive](https://www.gitbook.com/book/basarat/typescript/details)
