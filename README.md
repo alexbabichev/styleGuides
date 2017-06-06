@@ -1,12 +1,17 @@
 # Frontend Styleguide
 
+*A mostly reasonable approach to frontend*
+
 ## Table of Contents
 
 1. [Sass](sass/README.md)
-2. [JavaScript](#terminology)
-3. [TypeScript](#terminology)
-4. [Angular2](#terminology)
-5. [Requirements for designers](#terminology)
+2. [JavaScript](js/README.md)
+3. [TypeScript](ts/README.md)
+4. [Angular2+](a2/README.md)
+5. [Requirements for designers](requirements/README.md)
+
+##Resources
+
 
 
 ## License
