@@ -9,7 +9,7 @@
 3. [TypeScript](ts/README.md)
 4. [Angular2+](angular2/README.md)
 5. [Requirements for designers](requirements/README.md)
-
+6. [Markdown Cheatsheet](markdown/Markdown-Cheatsheet.md)
 
 
 ## Resources
