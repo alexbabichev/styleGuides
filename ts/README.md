@@ -5,19 +5,17 @@
 
 ## Table of Contents
 
-1. Formatting
-7. Line Length
-2. Quotes
-3. Spaces
-4. Semicolons
-5. Import
-6. Todo and XXX
-8. Inline Comments
-
-8. Types
-
-
-5. Filename
+1. [Formatting](#formatting)
+2. [Line length](#line-length)
+3. [Quotes](#quotes)
+4. [Spaces](#spaces)
+5. [Semicolons](#semicolons)
+6. [Todo and XXX](#todo-and-xxx)
+7. [Inline Comments](#inline-comments)
+8. [Import](#import)
+9. [Names](#names)
+10. [Types](#types)
+11. [Filename](#filename)
 
 ## Formatting
 
@@ -31,6 +29,23 @@ Examples:
 // Space before type i.e. foo:<space>string
 const foo: string = 'hello';
 ```
+
+Only surround arrow function parameters when necessary.
+
+```js
+
+// Bad
+(x) => x + x
+
+// Good
+x => x + x
+```
+
+## Line Length
+
+Lines must not be longer than 140 characters.
+
+When a statement runs over 140 characters on a line, it should be broken up, ideally after a comma or operator.
 
 ## Quotes
 
@@ -57,7 +72,19 @@ Use semicolons.
 
 > Reasons: Explicit semicolons helps language formatting tools give consistent results. Missing ASI (automatic semicolon insertion) can trip new devs e.g. foo() \\n (function(){}) will be a single statement (not two).
 
+## Todo and XXX
+
+`TODO` and `XXX` annotations help you quickly find things that need to be fixed/implemented.
+
+Use `// TODO:` to annotate solutions that need to be implemented.
+
+Use `// XXX:` to annotate problems the need to be fixed.
+
+It is best to write code that doesn't need `TODO` and `XXX` annotations, but sometimes it is unavoidable.
+
 ## Import
+
+Use whitespaces
 
 ```js
 //Bad
@@ -69,30 +96,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component, OnInit } from '@angular/core';
 ```
 
+## Names
 
-## Filename
-
-Name files with camelCase. E.g. `accordian.tsx`, `myControl.tsx`, `utils.ts`, `map.ts` etc.
-
-> Reasons: Its easier to read. Its used by the TypeScript team. Makes easier to know something is an array as the mind is trained to detect [].
-
-
-## Todo and XXX
-
-`TODO` and `XXX` annotations help you quickly find things that need to be fixed/implemented.
-
-Use `// TODO:` to annotate solutions that need to be implemented.
-
-Use `// XXX:` to annotate problems the need to be fixed.
-
-It is best to write code that doesn't need `TODO` and `XXX` annotations, but sometimes it is unavoidable.
-
-## Line Length
-
-Lines must not be longer than 140 characters.
-
-When a statement runs over 140 characters on a line, it should be broken up, ideally after a comma or operator.
-
+* Use PascalCase for type names.
+* Do not use "I" as a prefix for interface names.
+* Use PascalCase for enum values.
+* Use camelCase for function names.
+* Use camelCase for property names and local variables.
+* Do not use "\_" as a prefix for private properties.
+* Use whole words in names when possible.
 
 ## Types
 
@@ -124,5 +136,12 @@ function find<T, U extends Findable>(needle: T, haystack: U): U {
 #### Array
 
 Annotate arrays as `foos:Foo[]` instead of `foos:Array<Foo>`.
+
+> Reasons: Its easier to read. Its used by the TypeScript team. Makes easier to know something is an array as the mind is trained to detect [].
+
+
+## Filename
+
+Name files with camelCase. E.g. `accordian.tsx`, `myControl.tsx`, `utils.ts`, `map.ts` etc.
 
 > Reasons: Its easier to read. Its used by the TypeScript team. Makes easier to know something is an array as the mind is trained to detect [].
